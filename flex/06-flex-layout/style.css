@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+ul {
+  list-style-type: none;
+}
+
+a:link , a:visited , a:hover, a:active {
+  text-decoration: none;
+  color:gray;
+}
+
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
@@ -24,3 +36,40 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+.left-links, .right-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding:0px 40px;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer {
+  display: flex;
+  background-color: blanchedalmond;
+}
+
+.content {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttons > button {
+  padding:8px;
+}
+
+/* 
+Hide link lines 
+Fixed footer
+First 4 links as 1 object
+logo, input, two buttons below as 1 object
+last 4 links as 1 object in a footer
+*/
